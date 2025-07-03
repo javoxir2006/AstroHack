@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA: Love, Death + Robots Style - Solar Pulse Observatory</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel+Decorative&family=Electrolize&family=Exo+2:wght@400;700&family=Orbitron:wght@400;700&family=Roboto+Condensed&family=Roboto+Mono&family=Roboto:wght@300;400;700&family=Share+Tech+Mono&family=Space+Mono&family=Spectral&family=Wallpoet&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <button id="backToHomeBtn" class="home-button">← Back to Universe Select</button>
+    </header>
+
+    <section id="space-weather" class="content-section active">
+        <div class="section-inner-wrapper">
+            <h2 class="section-title">Solar Pulse Observatory <br> <small>Echoes from the Star</small></h2>
+            <div class="input-group">
+                <label for="donkiDate">Events from Date (max 30 days ago):</label>
+                <input type="date" id="donkiDate">
+                <button id="fetchDonki">Energize Pulse</button>
+            </div>
+            <div id="donkiContent" class="results-container">
+               
+                <p>Discover recent solar flares and coronal mass ejections!</p>
+            </div>
+        </div>
+    </section>
+
+    <div id="loading" class="loading-overlay">
+        <div class="loading-spinner"></div>
+        <p>Calculating Hyperdrive...</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

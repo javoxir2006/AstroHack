@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA: Love, Death + Robots Style - Near-Earth Objects</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel+Decorative&family=Electrolize&family=Exo+2:wght@400;700&family=Orbitron:wght@400;700&family=Roboto+Condensed&family=Roboto+Mono&family=Roboto:wght@300;400;700&family=Share+Tech+Mono&family=Space+Mono&family=Spectral&family=Wallpoet&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <button id="backToHomeBtn" class="home-button">← Back to Universe Select</button>
+    </header>
+
+    <section id="asteroids" class="content-section active">
+        <div class="section-inner-wrapper">
+            <h2 class="section-title">> NEAR-EARTH OBJECT WATCH</h2>
+            <div class="input-group asteroid-input-group">
+                <p class="system-message">> System ready. Select date range for threat analysis.</p>
+                <div class="input-row">
+                    <label for="asteroidStartDate">> START_DATE:</label>
+                    <input type="date" id="asteroidStartDate" value="">
+                </div>
+                <div class="input-row">
+                    <label for="asteroidEndDate">> END_DATE:</label>
+                    <input type="date" id="asteroidEndDate" value="">
+                </div>
+                <button id="fetchAsteroids">ANALYZE</button>
+            </div>
+            <div id="asteroidContent" class="results-container terminal-output">
+
+            </div>
+        </div>
+    </section>
+
+    <div id="loading" class="loading-overlay">
+        <div class="loading-spinner"></div>
+        <p>Calculating Hyperdrive...</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

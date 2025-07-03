@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA: Love, Death + Robots Style - Mars Rover Logs</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts Imports for thematic styling -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel+Decorative&family=Electrolize&family=Exo+2:wght@400;700&family=Orbitron:wght@400;700&family=Roboto+Condensed&family=Roboto+Mono&family=Roboto:wght@300;400;700&family=Share+Tech+Mono&family=Space+Mono&family=Spectral&family=Wallpoet&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <button id="backToHomeBtn" class="home-button">← Back to Universe Select</button>
+    </header>
+
+    <section id="mars-rover" class="content-section active">
+        <div class="section-inner-wrapper">
+            <h2 class="section-title">Mars Rover Logs <br> <small>Echoes from a Distant World</small></h2>
+            <div class="input-group">
+                <label for="marsDate">Select an Earth Date (Curiosity landed 2012-08-06 onwards):</label>
+                <input type="date" id="marsDate" min="2012-08-06" max="2024-12-31">
+                <button id="fetchMarsPhotos">Go to Mars</button>
+            </div>
+            <div id="marsContent" class="results-container">
+                <p>Enter a date and explore photos taken by the Curiosity Rover on Mars!</p>
+                <div class="mars-gallery"></div>
+            </div>
+        </div>
+    </section>
+
+    <div id="loading" class="loading-overlay">
+        <div class="loading-spinner"></div>
+        <p>Calculating Hyperdrive...</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

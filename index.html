@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA: LOR PROTOCOLS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel+Decorative&family=Electrolize&family=Exo+2:wght@400;700&family=Orbitron:wght@400;700&family=Roboto+Condensed&family=Roboto+Mono&family=Roboto:wght@300;400;700&family=Share+Tech+Mono&family=Space+Mono&family=Spectral&family=Wallpoet&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="hidden-back-button">
+        <button id="backToHomeBtn" class="home-button">← Back to Universe Select</button>
+    </header>
+
+    <main id="home-screen" class="active">
+        <h1 class="main-title">NASA: LOR PROTOCOLS</h1>
+        <p class="tagline">Explore the cosmos, one distinct experience at a time.</p>
+        <div class="episode-grid">
+            <div class="episode-card" id="card-mars-rover" data-target="mars.html">
+                <span class="episode-number">Episode 01</span>
+                <h2>Mars Rover Logs</h2>
+                <p>Uncover images from the Red Planet.</p>
+            </div>
+            <div class="episode-card" id="card-apod" data-target="apod.html">
+                <span class="episode-number">Episode 02</span>
+                <h2>Cosmic Vista Portal</h2>
+                <p>A daily dive into the universe's beauty.</p>
+            </div>
+            <div class="episode-card" id="card-asteroids" data-target="asteroids.html">
+                <span class="episode-number">Episode 03</span>
+                <h2>Near-Earth Objects</h2>
+                <p>Track the silent wanderers of space.</p>
+            </div>
+            <div class="episode-card" id="card-space-weather" data-target="space-weather.html">
+                <span class="episode-number">Episode 04</span>
+                <h2>Solar Pulse Observatory</h2>
+                <p>Feel the sun's fiery temperament.</p>
+            </div>
+            <div class="episode-card" id="card-epic" data-target="epic.html">
+                <span class="episode-number">Episode 05</span>
+                <h2>Earth's Daily Portrait</h2>
+                <p>See our planet from a million miles away.</p>
+            </div>
+        </div>
+    </main>
+
+    <div id="loading" class="loading-overlay">
+        <div class="loading-spinner"></div>
+        <p>Calculating Hyperdrive...</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
