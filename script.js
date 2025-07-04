@@ -1,5 +1,4 @@
-const NASA_API_KEY = 'rXyHvkRWkWMdgBjmejDbJabsHZ56BcN6vBK7M0Fh';
-//const NASA_API_KEY = 'DEMO_KEY';
+const NASA_API_KEY = 'DEMO_KEY';
 
 const backToHomeBtn = document.getElementById('backToHomeBtn');
 const header = document.querySelector('header');
